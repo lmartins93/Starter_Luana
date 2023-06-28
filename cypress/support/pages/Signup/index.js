@@ -34,7 +34,16 @@ class SignupForm {
         cy.get(elLogin.dataZip).type('6545465465')
         cy.get(elLogin.dataMnumber).type('169999999999')  
 
-    }
+    } 
 
+    InspectProduct_details(){
+        cy.get(elLogin.imagePdp)
+        cy.get(elLogin.Quantify)
+        cy.get(elLogin.BtnAddToCart)
+        cy.get(elLogin.NameFormPdp)
+        cy.get(elLogin.emailFormPdp)
+        cy.get(elLogin.ContainerReview)
+    }
 }
 export default new SignupForm
+

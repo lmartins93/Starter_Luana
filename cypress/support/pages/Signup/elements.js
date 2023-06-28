@@ -24,4 +24,11 @@ export const ELEMENTS = {
     dataCity:'[id="city"]',
     dataZip:'[name="zipcode"]',
     dataMnumber:'[name="mobile_number"]',
+    //PDP
+    imagePdp:'[src="/get_product_picture/1"]',
+    Quantify:'[id="quantity"]',
+    BtnAddToCart:'[class="btn btn-default cart"]',
+    NameFormPdp: '[placeholder="Your Name"]',
+    emailFormPdp:'[type="email"]',
+    ContainerReview: '[name="review"]',
 }
