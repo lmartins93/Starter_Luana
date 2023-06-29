@@ -11,8 +11,20 @@ class SignupForm {
         cy.get(elLogin.signupEmail).type('sayoa1841@uorak.com')
     }
 
+    inputsignupEmailcorrets(){
+        cy.get(elLogin.LogInmail).type('darien6565@uorak.com')
+    }
+
+    inputsignupPasswordcorrets(){
+        cy.get(elLogin.LogSenha).type('teste123')
+    }
+
     clickLoginNewUserBtn(){
         cy.get(elLogin.signupButton).click()
+    }
+
+    checkIconLogged(){
+    cy.should(iconLogged)
     }
 
     FillRegisterUserForm(){
@@ -33,7 +45,6 @@ class SignupForm {
         cy.get(elLogin.dataCity).type('Texto')
         cy.get(elLogin.dataZip).type('6545465465')
         cy.get(elLogin.dataMnumber).type('169999999999')  
-
     } 
 
     InspectProduct_details(){

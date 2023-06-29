@@ -6,6 +6,11 @@ export const ELEMENTS = {
     signupName : '[data-qa="signup-name"]',
     signupEmail : '[data-qa="signup-email"]',
     signupButton:'[data-qa="signup-button"]',
+    IconUserlogged: '[class="fa fa-user"]',
+    LogInmail: '[data-qa="login-email"]',
+    LogSenha:'[data-qa="login-password"]',
+    iconLogged: '//*[contains(text(),"Luana")]', //'[class="fa fa-user"]',
+    
     //Form NewUser
     gender2:'[id="id_gender2"]',
     inputPassword:'[data-qa="password"]',
