@@ -10,7 +10,7 @@ export const ELEMENTS = {
     LogInmail: '[data-qa="login-email"]',
     LogSenha:'[data-qa="login-password"]',
     iconLogged: '//*[contains(text(),"Luana")]', //'[class="fa fa-user"]',
-    
+    LoginBtn: '[data-qa="login-button"]',
     //Form NewUser
     gender2:'[id="id_gender2"]',
     inputPassword:'[data-qa="password"]',

@@ -23,6 +23,10 @@ class SignupForm {
         cy.get(elLogin.signupButton).click()
     }
 
+    clickLoginBtn(){
+        cy.get(elLogin.LoginBtn).click()
+    }
+
     checkIconLogged(){
     cy.should(iconLogged)
     }

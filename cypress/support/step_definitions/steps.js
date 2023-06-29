@@ -28,7 +28,7 @@ And("input email and password incorrects", () => {
 And("input email and password", () => {
     SignupForm.inputsignupEmailcorrets()
     SignupForm.inputsignupPasswordcorrets()
-    cy.get('[data-qa="login-button"]').click();
+    SignupForm.clickLoginBtn()
 })
 
 Then("check the error message", () =>{
