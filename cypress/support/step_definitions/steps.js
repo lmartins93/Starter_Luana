@@ -19,10 +19,14 @@ When("click login link", () => {
     cy.get('[class="fa fa-lock"]').click();
 })
 
-And("input email and password incorrects", () => {
-    cy.get('[data-qa="login-email"]').type('sayoa1841@uorak.com')
-    cy.get('[data-qa="login-password"]').type('teste123{enter}')
-    //cy.get('[data-qa="login-button"]').click();
+And("submit email and password incorrects", () => {
+    SignupForm.inputEmailAndpasswordIncorrects()
+    cy.get('[data-qa="login-button"]').click();
+})
+
+And("submit email and password", () => {
+    SignupForm.inputEmailAndpasswordCorrets()
+    cy.get('[data-qa="login-button"]').click();
 })
 
 And("input email and password", () => {

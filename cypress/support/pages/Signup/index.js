@@ -1,4 +1,5 @@
 /// <reference types="Cypress"/>
+import dataLogin from "../../../fixtures/dataLogin.json"        
 
 const elLogin = require('./elements').ELEMENTS
 
@@ -13,6 +14,16 @@ class SignupForm {
 
     inputsignupEmailcorrets(){
         cy.get(elLogin.LogInmail).type('darien6565@uorak.com')
+    }
+
+    inputEmailAndpasswordIncorrects(){
+        cy.get(elLogin.LogInmail).type(dataLogin.incorrectEmail)
+        cy.get(elLogin.LogSenha).type(dataLogin.incorrectPassword)
+    }
+
+    inputEmailAndpasswordCorrets(){
+        cy.get(elLogin.LogInmail).type(dataLogin.correctEmail)
+        cy.get(elLogin.LogSenha).type(dataLogin.correctPassword)
     }
 
     inputsignupPasswordcorrets(){
